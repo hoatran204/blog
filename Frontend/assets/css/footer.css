@@ -1,0 +1,74 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+}
+.column h2 {
+    font-size: 24px;
+    color: #6e6e6e;
+    margin-bottom: 20px;
+}
+.column p, .column ul {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.hotline {
+    font-weight: bold;
+    color: #d14b4b;
+}
+.locations ul {
+    list-style: none;
+    padding: 0;
+}
+.locations ul li {
+    margin-bottom: 10px;
+}
+.locations ul li::before {
+    content: "📍";
+    margin-right: 5px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #d14b4b;
+}
+footer {
+    background-color: #0c173b; 
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #ff6347;
+}

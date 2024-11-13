@@ -1,0 +1,21 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: #555;
+    font-size: 14px;
+}
+.logout-btn {
+    background-color: #d62c1a;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}

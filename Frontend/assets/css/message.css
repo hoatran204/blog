@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.hdt {
+  margin-top: 60px;
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+
+.hdt1 {
+  width: 300px; 
+  background-color: #fff;
+  border-right: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 15px;
+}
+
+.hdt11 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hdt111 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hdt112 {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.hdt112 i {
+  position: absolute;
+  left: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa; 
+}
+
+#hdt113 {
+  font-size: 15px;           
+  padding-left: 50px;      
+  border-radius: 15px;       
+  background-color: white;   
+  border: black solid 2px; 
+  height: 35px;              
+  width: 250px;              
+}
+.hdt12 {
+  margin-top: 20px;
+}
+
+.hdt121 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+.hdt121:hover{
+  background-color: beige;
+}
+.hdt1211{
+  width: 100%;
+}
+.hdt122{
+  width: 50px;
+  height: 50px;
+}
+.hdt122 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.hdt123 {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.status {
+  color: #666;
+  font-size: 12px;
+}
+
+.hdt2 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.hdt21 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+.hdt211{
+  width: 50px;
+  height: 50px;
+}
+.hdt211 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.hdt212 {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.hdt2121 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hdt2122 {
+  color: #666;
+  font-size: 14px;
+}
+
+.hdt213 button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hdt22 {
+  min-height: 65vh;
+  height: auto;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hdt23 {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+}
+
+.hdt23 input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  outline: none;
+}
+
+.hdt23 button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Khung chứa tất cả tin nhắn */
+.message-box {
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  height: 400px; /* Đảm bảo khung tin nhắn có chiều cao cố định */
+  overflow-y: auto; /* Cho phép cuộn khi có nhiều tin nhắn */
+}
+
+/* Khung tin nhắn cho người dùng */
+.message-container.right {
+  text-align: right; /* Tin nhắn của người dùng căn phải */
+  margin-bottom: 10px;
+}
+
+/* Khung tin nhắn cho người bạn */
+.message-container.left {
+  text-align: left; /* Tin nhắn của người bạn căn trái */
+  margin-bottom: 10px;
+}
+
+/* Style cho nội dung tin nhắn */
+.name {
+  display: inline-block;
+  background-color: #e1f5fe;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 70%; /* Giới hạn chiều rộng tin nhắn */
+}
+
+/* Tin nhắn của người dùng có màu khác */
+.message-container.right .name {
+  background-color: #80deea;
+}
+
+/* Tin nhắn của người bạn có màu khác */
+.message-container.left .name {
+  background-color: #b3e5fc;
+}

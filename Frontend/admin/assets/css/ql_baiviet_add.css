@@ -1,0 +1,119 @@
+.main-content {
+    flex-grow: 1;
+    padding: 20px 30px;
+    background-color: #fff;
+}
+
+/* Toàn bộ nội dung */
+/* Content Section */
+.content {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 80vh; /* Ensure content takes up at least 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%; /* Ensure the card takes up full width of its parent */
+    max-width: 1200px; /* Limit the max width of the card */
+}
+
+/* Card Header */
+.card-header h2 {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; /* Center the header text */
+}
+
+/* Form Styles */
+form .mb-3, form .col {
+    margin-bottom: 15px;
+}
+
+/* Form Label */
+form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Inputs */
+form input[type="text"],
+form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling for File Input */
+form input[type="file"] {
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+.btn-success, .card-header button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Button Hover Effects */
+.btn-success:hover, .card-header button:hover {
+    background-color: #218838;
+}
+
+/* Spacing for Button in Card Header */
+.card-header button {
+    margin-top: 15px;
+    margin-left: auto; /* Align button to the right of its parent */
+    margin-right: auto;
+}
+
+/* Responsiveness for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+
+    .card-header h2 {
+        font-size: 1.2em;
+    }
+
+    .btn-success, .card-header button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

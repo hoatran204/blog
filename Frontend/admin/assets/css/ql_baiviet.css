@@ -1,0 +1,101 @@
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px 30px;
+    background-color: #fff;
+}
+
+
+.logout-btn {
+    background-color: #d62c1a;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+.content {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 215px;
+}
+
+
+.card {
+    margin: 20px 0;
+}
+
+.card-header h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table th, .table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Chỉnh kích thước ảnh phòng */
+.table img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Nút sửa và xóa */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
